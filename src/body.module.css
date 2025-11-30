@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:linear-gradient(to right, red,blue);
+    width: 100vw;
+    overflow-x: hidden;
+   
+}
+.layaut{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 60px;
+    background-color: aliceblue;
+    align-items: center;
+}
+header .con_b{
+    display: flex;
+    gap: 30px;
+}
+header .con_b .btn{
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: aliceblue;
+    border: none;
+    transition: all .3s ease;
+    border: 1px solid aliceblue;
+}
+header .con_b .btn:hover{
+    border: 1px solid blue;
+}
+.button_1{
+    padding: 10px 20px ;
+    border-radius: 10px ;
+    border: none;
+    cursor: pointer;
+    background-color: black;
+    color: aliceblue;
+    transition: all .5s ease;
+}
+.button_1:hover{
+    transform: skewX(-10deg);
+    border: 1px solid blue;
+    box-shadow: 1px 4px 10px blue;
+}
+.open{
+  background:linear-gradient(to right, rgb(145, 1, 148), rgb(47, 0, 255));
+  width: 300px ;
+  height: 450px;
+  position: fixed;
+  top: 9%;
+  right: 20%;
+  box-shadow: 1px 1px 3px rgb(0, 0,0);
+  display: grid;
+  grid-template-rows: .5fr 1.5fr;z-index: 20;
+  border-radius: 10px;
+}
+.con_btn{
+    display: flex;
+    justify-content: end;
+}
+.button_2{
+    width: 25px ;
+    height: 25px;
+    margin: 10px 10px ;
+    background-color:rgb(47, 0, 255) ;
+    border: none;
+    cursor: pointer;
+}
+.con_btn_2{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+.button_3{
+    width: 80px;
+    height: 40px;
+    background: linear-gradient(to right,rgb(77, 1, 148), rgb(47, 0, 255));
+    cursor: pointer;
+    color: aliceblue;
+    transition: all .1s ease ;
+    border: none;
+}
+.button_3:hover{
+box-shadow: 1px 1px 5px ;
+border: 1px solid white;
+}
+.isfilms{
+   width: 80%;
+   height: 600px;
+   background-color: aliceblue;
+   position: fixed;
+   top: 12%;
+   border-radius: 30px;
+   display: grid;
+   grid-template-rows: .2fr 1.8fr;
+   z-index: 20;
+}
+.button_4{
+    width: 40px;
+    height: 40px;
+    background-color: aliceblue;
+    cursor: pointer;
+    border: none;
+    margin: 5px 10px;
+    border-radius: 10px;
+}
+.con_content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.con_films_contents, .con_serials_contents{
+    display: grid;
+    grid-template-rows: .2fr 1.8fr;
+}
+.con_h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fullcard{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    margin-top: 100px;
+    flex: 1;
+    margin-bottom: 100px;
+    
+}
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(55, 55, 55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+a{
+    color: aliceblue;
+    text-decoration: none;
+}
+@media(max-width:600px){
+   .h1_1{
+    font-size: 20px;
+   } 
+    header .con_b{
+    gap: 5px;
+
+   }
+   header .con_b .btn{
+    padding: 10px;
+   }
+   .button_1{
+    padding:10px ;
+   }
+   .open{
+    right: 10%;
+    height: 350px;
+   }
+   .isfilms{
+    width: 90%;
+   }
+   .con_content{
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: repeat(2, 1fr);
+   }
+   
+}
+@media(max-width:685px){
+.isfilms{
+    height: 80%;
+   }
+   
+
+}
+
